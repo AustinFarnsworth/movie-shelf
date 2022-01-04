@@ -1,12 +1,12 @@
 import "./App.css";
 import Topbar from "./ components/topbar";
-import Movies from "./ components/movies";
+import MoviesList from "./ components/moviesList";
 
 function App() {
   return (
     <div className="App">
       <Topbar />
-      <Movies />
+      <MoviesList />
     </div>
   );
 }
