@@ -1,9 +1,10 @@
 import React, {useState} from "react";
 
-const Movies = (props) => {
+const Movies = ({name, price}) => {
   return (
     <div>
-      <h4>{props.name}</h4>
+      <h4>{name}</h4>
+      {/* <h4>{price}</h4> */}
     </div>
   );
 };
