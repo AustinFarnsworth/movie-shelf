@@ -1,7 +1,9 @@
 import React, {useState, createContext} from "react";
 
-const MovieProvider = () => {
-  const [movies, setMovie] = useState([
+export const MovieContext = createContext();
+
+export const MovieProvider = (props) => {
+  const [movies, setMovies] = useState([
     {
       name: "Captain America",
       price: "29.99",
@@ -18,6 +20,11 @@ const MovieProvider = () => {
       id: "1232",
     },
   ]);
+  return (
+    <MovieContext.Provider value={[movies, setMovies]}>
+      {props.children}
+    </MovieContext.Provider>
+  );
 };
-
-export default MovieProvider;
+// props.children is going to render all of the child components of what
+// the movie provider is wrapped around

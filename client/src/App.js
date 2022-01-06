@@ -1,13 +1,16 @@
 import "./App.css";
 import Topbar from "./ components/topbar";
 import MoviesList from "./ components/moviesList";
+import {MovieProvider} from "./context/movieContext";
 
 function App() {
   return (
-    <div className="App">
-      <Topbar />
-      <MoviesList />
-    </div>
+    <MovieProvider>
+      <div className="App">
+        <Topbar />
+        <MoviesList />
+      </div>
+    </MovieProvider>
   );
 }
 
