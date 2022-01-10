@@ -6,17 +6,17 @@ export const MovieProvider = (props) => {
   const [movies, setMovies] = useState([
     {
       name: "Captain America",
-      price: "29.99",
+      rating: "5 stars",
       id: "1234",
     },
     {
       name: "The Prestige",
-      price: "99.99",
+      rating: "3 and a half stars",
       id: "1233",
     },
     {
       name: "Snitch",
-      price: "20.95",
+      rating: "3 and a half stars",
       id: "1232",
     },
   ]);

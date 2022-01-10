@@ -7,7 +7,7 @@ function MoviesList() {
   return (
     <div>
       {movies.map((movie) => (
-        <Movies name={movie.name} price={movie.price} key={movie.id} />
+        <Movies name={movie.name} price={movie.rating} key={movie.id} />
       ))}
     </div>
   );

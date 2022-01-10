@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-const Movies = ({name, price}) => {
+const Movies = ({name, rating}) => {
   return (
     <div>
       <h4>{name}</h4>
