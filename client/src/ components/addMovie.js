@@ -1,5 +1,6 @@
 import React, {useState, useContext} from "react";
 import {MovieContext} from "../context/movieContext";
+import "./addMovie.css";
 
 function AddMovie() {
   const [name, setName] = useState("");
@@ -21,14 +22,10 @@ function AddMovie() {
 
   return (
     <form>
+      <label className="movie-label">Movie</label>
       <input type="text" name="name" value={name} onChange={updateName} />
-      <input
-        type="text"
-        placeholder="rating"
-        name="rating"
-        value={rating}
-        onChange={updateRating}
-      />
+      <label className="rating-lable">Rating</label>
+      <input type="text" name="rating" value={rating} onChange={updateRating} />
       <button type="submit" onClick={addMovie}>
         Add Movie
       </button>
