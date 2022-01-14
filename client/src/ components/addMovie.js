@@ -23,9 +23,21 @@ function AddMovie() {
   return (
     <form>
       <label className="movie-label">Movie</label>
-      <input type="text" name="name" value={name} onChange={updateName} />
+      <input
+        className="form-input"
+        type="text"
+        name="name"
+        value={name}
+        onChange={updateName}
+      />
       <label className="rating-lable">Rating</label>
-      <input type="text" name="rating" value={rating} onChange={updateRating} />
+      <input
+        className="form-input"
+        type="text"
+        name="rating"
+        value={rating}
+        onChange={updateRating}
+      />
       <button type="submit" onClick={addMovie}>
         Add Movie
       </button>

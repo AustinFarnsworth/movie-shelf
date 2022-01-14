@@ -1,11 +1,11 @@
 form {
   padding: 15px;
-
+  margin-bottom: 5px;
   display: flex;
   flex-direction: column;
 }
 
-input {
+.form-input {
   width: 50%;
   margin: 10px 0;
 }
@@ -19,4 +19,19 @@ button {
   cursor: pointer;
   color: #edeef1;
   background-color: #ef8354;
+}
+
+@media screen and (max-width: 900px) {
+  form {
+    align-items: center;
+    margin-bottom: 5px;
+  }
+
+  .form-input {
+    width: 60%;
+  }
+
+  button {
+    width: 60%;
+  }
 }
