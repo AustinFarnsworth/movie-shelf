@@ -1,13 +1,14 @@
 import React, {useState, useContext} from "react";
-import Movies from "./movies";
+import "./moviesList.css";
+import MovieCard from "./movieCard";
 import {MovieContext} from "../context/movieContext";
 
 function MoviesList() {
   const [movies, setMovies] = useContext(MovieContext);
   return (
-    <div>
+    <div className="movie-list-container">
       {movies.map((movie) => (
-        <Movies name={movie.name} price={movie.rating} key={movie.id} />
+        <MovieCard name={movie.name} price={movie.rating} key={movie.id} />
       ))}
     </div>
   );
