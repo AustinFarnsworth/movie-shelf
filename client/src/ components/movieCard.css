@@ -1,2 +1,24 @@
 .card-container {
+  display: inline-block;
+  /* background-color: blue; */
+}
+
+.movie {
+  max-width: 300px;
+  min-width: 270px;
+  max-height: 400px;
+  min-height: 370px;
+  background-color: #1e1b26;
+  margin: 25px;
+  padding: 2px;
+  box-shadow: 3px 3px 50px -14px black;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 900px) {
+  .card-container {
+    max-width: 100%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
 }
