@@ -5,7 +5,11 @@ const MovieCard = ({name, rating}) => {
   return (
     <div className="card-container">
       <div className="movie">
-        <div>Hello</div>
+        <img
+          className="movie-img"
+          src="../images/movietheatre.jpg"
+          alt="movie"
+        />
       </div>
     </div>
   );
