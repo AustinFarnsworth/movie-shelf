@@ -11,6 +11,16 @@ const MovieCard = ({name, rating}) => {
           alt="movie"
         />
       </div>
+      <div className="movie-text">
+        <div className="column1">
+          <h1>Captain America</h1>
+          <ul className="movie-desc">
+            <li>PG-13</li>
+            <li>2h 52min</li>
+            <li>Adventure, Drama</li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 };

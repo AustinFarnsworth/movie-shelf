@@ -1,3 +1,21 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800,300italic,400italic,600italic,700italic,800italic);
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Montserrat", sans-serif;
+  margin: 0px;
+  color: #e7e7e7;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 300;
+}
+
 .card-container {
   width: 320px;
   height: 450px;
@@ -6,9 +24,6 @@
   padding: 2px;
   box-shadow: 3px 3px 50px -14px black;
   border-radius: 4px;
-}
-
-.movie {
 }
 
 .movie-img {
@@ -21,6 +36,26 @@
   border-top-right-radius: 4px;
   position: relative;
   bottom: 0%;
+}
+
+.movie-text {
+  padding: 0px 15px;
+  text-align: justify;
+}
+
+.movie-desc {
+  margin: 0px;
+  padding: 0px;
+}
+.movie-desc li {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  width: auto;
+  display: block;
+  float: left;
+  margin-right: 6px;
+  font-weight: 600;
+  color: #818181;
 }
 
 @media screen and (max-width: 900px) {
