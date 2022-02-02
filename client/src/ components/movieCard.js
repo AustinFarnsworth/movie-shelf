@@ -22,9 +22,9 @@ const MovieCard = ({name, rating, movieRating}) => {
             </div>
             <div className="movie-text">
               <div className="column1">
-                <h1>{name}</h1>
+                <h1>{el.name}</h1>
                 <ul className="movie-desc">
-                  <li>{movieRating}</li>
+                  <li>{el.movieRating}</li>
                   <li>2h 52min</li>
                   <li>Adventure, Drama</li>
                 </ul>
