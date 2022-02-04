@@ -5,7 +5,7 @@ export const MovieContext = createContext();
 export const MovieProvider = (props) => {
   const [movies, setMovies] = useState([
     {
-      name: "Captain America",
+      title: "Captain America",
       rating: "5 stars",
       id: "1234",
       movieRating: "PG-13",
@@ -16,7 +16,7 @@ export const MovieProvider = (props) => {
       actors: "Chris Evans, Hugo Weaving, Hayley Atwell",
     },
     {
-      name: "The Prestige",
+      title: "The Prestige",
       rating: "3 and a half stars",
       id: "1233",
       movieRating: "PG-13",
@@ -27,7 +27,7 @@ export const MovieProvider = (props) => {
       actors: "Christian Bale, Hugh Jackman, Scarlett Johansson",
     },
     {
-      name: "Snitch",
+      title: "Snitch",
       rating: "3 and a half stars",
       id: "1232",
       movieRating: "PG-13",
