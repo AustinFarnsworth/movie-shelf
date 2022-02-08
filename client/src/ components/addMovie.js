@@ -1,5 +1,6 @@
 import React, {useState, useContext} from "react";
 import {MovieContext} from "../context/movieContext";
+import imdb from "../api/imdb";
 import "./addMovie.css";
 
 function AddMovie() {
