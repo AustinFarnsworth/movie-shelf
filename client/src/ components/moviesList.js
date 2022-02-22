@@ -7,9 +7,7 @@ function MoviesList() {
   const [movies, setMovies] = useContext(MovieContext);
   return (
     <div className="movie-list-container">
-      {movies.map((movie) => (
-        <MovieCard name={movie.title} price={movie.rating} key={movie.id} />
-      ))}
+      <MovieCard />
     </div>
   );
 }
