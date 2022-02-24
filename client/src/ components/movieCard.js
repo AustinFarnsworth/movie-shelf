@@ -10,7 +10,7 @@ const MovieCard = () => {
       {movies.map((movie) => {
         return (
           <div className="card-container">
-            <div className="movie">
+            <div className="movie" key={movie.id}>
               <img
                 className="movie-img"
                 src="../images/movietheatre.jpg"
@@ -31,9 +31,6 @@ const MovieCard = () => {
                 <div className="colum2">
                   <h5>Summary</h5>
                 </div>
-                {/* <div className="column2">
-          <div>Movie Likes</div>
-        </div> */}
               </div>
               <div className="column1">
                 <p className="movie-summary">{movie.movieSummary}</p>
@@ -50,10 +47,5 @@ const MovieCard = () => {
     </div>
   );
 };
-
-// <h4>{name}</h4>;
-// {
-//   /* <h4>{price}</h4> */
-// }
 
 export default MovieCard;
