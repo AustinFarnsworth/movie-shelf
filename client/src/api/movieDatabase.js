@@ -1,14 +1,13 @@
 import axios from "axios";
 
-axios
-  .get("")
-  .then((response) => console.log(response))
-  .catch((error) => console.log(error));
+require("dotenv").config();
 
-// export default axios.create({
-//   API_URL= "https://imdb8.p.rapidapi.com",
-//   REQUEST_HEADERS = {
-//     'x-rapidapi-host': 'imdb8.p.rapidapi.com',
-//     'x-rapidapi-key': '
-//   }
-// });b
+const KEY = process.env.REACT_API_KEY;
+
+export default axios.create({
+  baseURL: "https://api.themoviedb.org/3/movie",
+  params: {
+    api_key: KEY,
+    include_adult: false,
+  },
+});
