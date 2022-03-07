@@ -5,11 +5,13 @@ import movieDatabase from "../api/movieDatabase";
 
 const MovieCard = () => {
   const [movies, setMovies] = useState("");
-  const [genres, setGenres] = useState("");
+  const [genres, setGenres] = useState([]);
+
+  const imageURL = "https://image.tmdb.org/t/p/w500";
 
   useEffect(() => {
     movieDatabase
-      .get("/557")
+      .get("/559")
       .then((response) => {
         console.log(response.data.genres);
         setMovies(response.data);
@@ -24,7 +26,11 @@ const MovieCard = () => {
     <div>
       <div className="card-container">
         <div className="movie" key={movies.id}>
-          <img className="movie-img" src={movies.poster_path} alt="movie" />
+          <img
+            className="movie-img"
+            src={imageURL + movies.poster_path}
+            alt="movie"
+          />
         </div>
         <div className="movie-text">
           <div className="column1">
@@ -32,7 +38,12 @@ const MovieCard = () => {
             <ul className="movie-desc">
               <li>{movies.movieRating}</li>
               <li>{movies.runtime} mins</li>
-              {/* <li>{genres}</li> */}
+
+              <div>
+                {genres.map((el) => {
+                  <li>{el.name}</li>;
+                })}
+              </div>
             </ul>
           </div>
           <br />
